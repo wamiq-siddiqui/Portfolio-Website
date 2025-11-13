@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muhammad Wamiq Siddiqui - Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- hamburger icon -->
+            <i class="fa-solid fa-bars" id="menu-icon" aria-label="Open menu" role="button" tabindex="0"></i>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Muhammad Wamiq Siddiqui</span></h1>
+                <p class="lead">A passionate Web Developer focused on building modern and user-friendly websites.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Project</a>
+                    <a href="#contact" class="btn-outline">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image" aria-hidden="false">
+                <img src="profile.jpg" alt="Portrait of Muhammad Wamiq Siddiqui" />
+            </div>
+        </section>
+
+
+        <section id="about" class="about section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I’m Muhammad Wamiq Siddiqui, a Web Developer based in Karachi, Pakistan. I create clean,
+                    responsive, and accessible front-end experiences using HTML, CSS and JavaScript.
+                </p>
+                <ul class="about-list">
+                    <li><strong>Location:</strong> Karachi, Pakistan</li>
+                    <li><strong>Education:</strong> Intermediate (Pre-Engineering)</li>
+                    <li><strong>Interests:</strong> Coding, Travelling, Bike Riding</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML</h3>
+                        <p>I create clean and well-structured web pages using modern HTML practices.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>CSS</h3>
+                        <p>I design responsive layouts and modern user interfaces with CSS and Flexbox.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>I use JavaScript to add interactivity, animations, and form validations.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Responsive Design</h3>
+                        <p>I ensure every website looks great on all devices — from phones to desktops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2>Project</h2>
+                <article class="project-card">
+                    <h3>Scholarship Application Form</h3>
+                    <p>
+                        A responsive scholarship application form built using HTML, CSS and JavaScript.
+                        Includes client-side validation and a clean, mobile-friendly layout.
+                    </p>
+                    <p>
+                        <a href="https://wamiq-siddiqui.github.io/Scholarship-Application-Form/" target="_blank"
+                            rel="noopener" class="btn">
+                            View Project
+                        </a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Have a project or want to work together? Send a message below.</p>
+
+                <form id="contactForm" class="contact-form" novalidate>
+                    <label for="contact-name">Full Name</label>
+                    <input id="contact-name" type="text" name="name" placeholder="Enter your full name" required />
+
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" type="email" name="email" placeholder="Enter your email" required />
+
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Write a short message"
+                        required></textarea>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="theme-container">
+            <button id="themeButton">Enable Dark Mode</button>
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Muhammad Wamiq Siddiqui — All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
